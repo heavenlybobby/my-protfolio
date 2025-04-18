@@ -66,7 +66,7 @@ export const Work = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 bg-indigo-600 rounded-full hover:bg-indigo-500 transition"
+                className="px-5 py-2 bg-[rgb(69,228,90)] rounded-full hover:bg-[rgb(69,228,90)] transition"
               >
                 View Project
               </a>
