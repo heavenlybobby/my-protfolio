@@ -9,6 +9,7 @@ export default function Heading({
   title,
   titleSize,
   titleColor,
+  width,
 }) {
   return (
     <motion.div
@@ -16,7 +17,7 @@ export default function Heading({
       whileInView={{ opacity: 1, y: 0 }} // When in view, fade in & slide up
       transition={{ delay: 0.5, duration: 1.5 }} // Animation time
       viewport={{ once: true }}
-      className="pb-[50px] border-b-2 border-[rgb(69,228,90)] m-auto w-[350px] md:w-[500px] lg:w-[1000px]"
+      className={`pb-[50px] border-b-2 border-[rgb(69,228,90)] m-auto ${width} `}
     >
       <CustomText
         text={subTitle}

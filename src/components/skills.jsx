@@ -25,7 +25,7 @@ export const Skills = ({ icon, skill, skillDetail }) => {
             textSize="text-[40px] lg:text-[30px]"
           />
         </span>
-        <p className="text-[17px] text-[rgb(117,117,117)] font-[lora] leading-[30px]">
+        <p className="text-[16px] text-[rgb(117,117,117)] font-[lora] leading-[30px]">
           {skillDetail}
         </p>
       </div>

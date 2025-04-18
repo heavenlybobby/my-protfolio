@@ -23,6 +23,7 @@ export const Service = () => {
         title={"I’ve got everything you need to launch and grow your business"}
         titleColor={"text-black"}
         titleSize={"text-[30px] lg:text-[50px]"}
+        width={"w-[350px] md:w-[500px] lg:w-[1000px]"}
       />
 
       <div className="mt-[50px] w-[400px] lg:w-[1250px] m-auto flex flex-wrap gap-[50px]">
