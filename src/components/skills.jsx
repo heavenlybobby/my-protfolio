@@ -9,7 +9,7 @@ export const Skills = ({ icon, skill, skillDetail }) => {
       whileInView={{ opacity: 1, y: 0 }} // When in view, fade in & slide up
       transition={{ delay: 1, duration: 1.5 }} // Animation time
       viewport={{ once: true }}
-      className="w-[400px] lg:w-[600px] flex flex-col lg:flex-row p-[10px] 
+      className="w-[350px] md:w-[500px] lg:w-[600px] flex flex-col lg:flex-row p-[10px] m-auto 
      "
     >
       <img
