@@ -14,7 +14,7 @@ export default function Menu() {
     <div>
       {!isMenuOpen ? (
         <button
-          className="text-[green] text-[20px] font-bold flex gap-5 cursor-pointer bg-black fixed top-[20px] right-[20px] rounded-[5px] pl-[10px] pr-[10px] pt-[5px] pb-[5px] shadow-lg hover:text-[white] transition-all duration-500 ease-in-out"
+          className="text-[green] text-[20px] font-bold flex gap-5 cursor-pointer bg-black fixed top-[20px] right-[20px] rounded-[5px] pl-[10px] pr-[10px] pt-[5px] pb-[5px] shadow-lg hover:text-[white] transition-all duration-500 ease-in-out z-[1000]"
           onClick={toggleMenu}
         >
           Menu{" "}
@@ -27,7 +27,7 @@ export default function Menu() {
       )}
 
       <div
-        className={`fixed right-0 top-[1px] bottom-0 w-[250px] flex flex-col gap-5 text-[white] bg-black text-[16px] font-bold tracking-[2.5px] pl-[20px] pt-[20px] pb-[20px] rounded-l-[10px] shadow-lg transition-transform duration-300 ease-in-out ${
+        className={`fixed right-0 top-[1px] bottom-0 w-[250px] flex flex-col gap-5 text-[white] bg-black text-[16px] font-bold tracking-[2.5px] pl-[20px] pt-[20px] pb-[20px] rounded-l-[10px] shadow-lg transition-transform duration-300 ease-in-out z-[1000] ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
