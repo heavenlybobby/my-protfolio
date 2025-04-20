@@ -28,7 +28,7 @@ const projects = [
   },
 ];
 
-export const Work = () => {
+const Work = () => {
   return (
     <section className="max-w-5xl mx-auto px-4 py-16">
       <div className="grid md:grid-cols-2 gap-8">
@@ -77,3 +77,5 @@ export const Work = () => {
     </section>
   );
 };
+
+export default Work;

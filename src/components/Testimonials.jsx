@@ -1,6 +1,8 @@
 import React from "react";
+import { Suspense, lazy } from "react";
 import Heading from "./heading";
-import { Clients } from "./Clients";
+import Loader from "./Loader";
+const Clients = lazy(() => import("./Clients"));
 
 export const Testimonials = () => {
   return (
@@ -15,7 +17,9 @@ export const Testimonials = () => {
         width={"w-[350px] md:w-[500px] lg:w-[1000px]"}
       />
 
-      <Clients />
+      <Suspense fallback={<Loader />}>
+        <Clients />
+      </Suspense>
     </div>
   );
 };

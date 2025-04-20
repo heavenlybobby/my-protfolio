@@ -1,6 +1,8 @@
 import React from "react";
+import { Suspense, lazy } from "react";
 import Heading from "./heading";
-import { Work } from "./Work";
+import Loader from "./Loader";
+const Work = lazy(() => import("./Work"));
 // import work1 from "../assets/images/work1.png";
 
 export const Works = () => {
@@ -18,7 +20,9 @@ export const Works = () => {
         />
       </div>
       <div className="relative top-[-200px]">
-        <Work />
+        <Suspense fallback={<Loader />}>
+          <Work />
+        </Suspense>
       </div>
     </div>
   );

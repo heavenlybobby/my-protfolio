@@ -37,7 +37,7 @@ export const testimonials = [
   },
 ];
 
-export const Clients = () => {
+const Clients = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -75,6 +75,7 @@ export const Clients = () => {
           <img
             src={testimonials[currentIndex].image}
             alt={testimonials[currentIndex].name}
+            loading="lazy"
             className="w-24 h-24 rounded-full object-cover mt-4 mx-auto"
           />
           <h4 className="font-semibold text-[20px] text-center mt-4">
@@ -89,67 +90,4 @@ export const Clients = () => {
   );
 };
 
-/*
-const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  const nextTestimonial = () => {
-    setDirection(1); // move right to left
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevTestimonial = () => {
-    setDirection(-1); // move left to right
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  return (
-    <section className="max-w-xl mx-auto py-16 text-center">
-      <h2 className="text-3xl font-bold mb-8">What My Clients Say</h2>
-
-      <div className="relative overflow-hidden">
-        <div className="flex justify-between mt-8">
-          <button
-            onClick={prevTestimonial}
-            className="text-indigo-600 hover:text-indigo-800 text-[30px] transition"
-          >
-            <FontAwesomeIcon icon={faArrowLeft} size="lg" />
-          </button>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={testimonials[currentIndex].name}
-              initial={{ opacity: 0, x: direction > 0 ? 50 : -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: direction > 0 ? -100 : 100 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center px-6"
-            >
-              <p className="text-lg italic mb-4">
-                "{testimonials[currentIndex].testimony}"
-              </p>
-              <img
-                src={testimonials[currentIndex].image}
-                alt={testimonials[currentIndex].name}
-                className="w-24 h-24 rounded-full object-cover mt-4"
-              />
-              <h4 className="font-semibold text-indigo-600 text-xl">
-                {testimonials[currentIndex].name}
-              </h4>
-            </motion.div>
-          </AnimatePresence>
-          <button
-            onClick={nextTestimonial}
-            className="text-indigo-600 hover:text-indigo-800 text-[30px] transition"
-          >
-            <FontAwesomeIcon icon={faArrowRight} size="lg" />
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-
-*/
+export default Clients;
