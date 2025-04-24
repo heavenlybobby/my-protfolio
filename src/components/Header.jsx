@@ -11,8 +11,8 @@ import {
 export default function Header() {
   return (
     <div>
-      <div className="bg-[url('./assets/images/hero-bg.jpg')] min-h-[100dvh] lg:h-[150dvh] bg-cover bg-no-repeat">
-        <div className="bg-[rgba(0,0,0,0.5)] h-full">
+      <div className="bg-[url('./assets/images/hero-bg.jpg')] min-h-[100vh] lg:h-[150vh] bg-fixed bg-cover bg-no-repeat">
+        <div className="bg-[rgba(0,0,0,0.5)] min-h-[100vh] lg:h-[150vh]">
           <div className="h-[100px] flex items-center ml-[20px] mr-[50px] justify-between">
             <h1 className="text-[white] text-[30px] font-bold">
               CODENOVA<span className="text-[green] text-[40px]">.</span>

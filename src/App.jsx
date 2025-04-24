@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import { Service } from "./components/service";
@@ -14,6 +15,7 @@ export default function App() {
       <Service />
       <Works />
       <Testimonials />
+      <Contact />
     </>
   );
 }
