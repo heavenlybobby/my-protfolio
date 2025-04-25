@@ -44,31 +44,36 @@ export default function Header() {
             </motion.div>
             <div className="text-[white] hidden lg:flex flex-col gap-5 mr-[50px] mt-[100px]">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61572935739224"
+                target="_blank"
                 className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a
-                href="#"
+                href="https://x.com/heavenly_b49271"
+                target="_blank"
                 className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
               >
                 <FontAwesomeIcon icon={faXTwitter} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/heavenlybobby/"
+                target="_blank"
                 className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/precious-onwukanjo-10aaa2325"
+                target="_blank"
                 className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
               <a
-                href="#"
+                href="https://wa.me/2349124271756"
+                target="_blank"
                 className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
               >
                 <FontAwesomeIcon icon={faWhatsapp} />
