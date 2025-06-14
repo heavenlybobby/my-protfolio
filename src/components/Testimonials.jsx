@@ -6,7 +6,7 @@ const Clients = lazy(() => import("./Clients"));
 
 export const Testimonials = () => {
   return (
-    <div className="bg-[#eee] pt-[150px]">
+    <div className="bg-[#eee] pt-[150px]" id="clients">
       <Heading
         subTitle={"My Clients"}
         subTitleSize={"text-[30px]"}

@@ -42,26 +42,48 @@ export default function Menu() {
           </button>
         </div>
         <div className="flex flex-col gap-5">
-          <a href="#" className="font-[montserrat]">
+          <a href="#" className="font-[montserrat] hover:text-green-500">
             Home
           </a>
-          <a href="#" className="font-[montserrat] font-[18px]">
+          <a
+            href="#"
+            className="font-[montserrat] font-[18px] hover:text-green-500"
+          >
             About
           </a>
-          <a href="#" className="font-[montserrat] font-[18px]">
+          <a
+            href="#"
+            className="font-[montserrat] font-[18px] hover:text-green-500"
+          >
             Services
           </a>
-          <a href="#" className="font-[montserrat] font-[18px]">
+          <a
+            href="#"
+            className="font-[montserrat] font-[18px] hover:text-green-500"
+          >
             Works
           </a>
-          <a href="#" className="font-[montserrat] font-[18px]">
+          <a
+            href="#clients"
+            className="font-[montserrat] font-[18px] hover:text-green-500"
+          >
             Clients
           </a>
-          <a href="#" className="font-[montserrat] font-[18px]">
+          <a
+            href="#"
+            className="font-[montserrat] font-[18px] hover:text-green-500"
+          >
             Contact
           </a>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <div
+          className="bg-black opacity-[0.7] z-[800] fixed top-0 left-0 right-0 bottom-0"
+          onClick={toggleMenu}
+        ></div>
+      )}
     </div>
   );
 }

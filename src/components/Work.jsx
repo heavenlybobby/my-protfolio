@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 
 import work1Img from "../assets/images/work1.png";
 import work2Img from "../assets/images/work2.png";
+import work3Img from "../assets/images/work3.png";
 
 // Example projects data
 const projects = [
   {
-    title: "Expressway Delivery",
-    link: "https://www.expresswaydelivery.xyz/",
-    image: work1Img, // replace with real image later
+    title: "Maniverse nail salon",
+    link: "https://maniverse-nail-app.vercel.app/",
+    image: work3Img, // replace with real image later
   },
   {
     title: "Expressway Delivery",

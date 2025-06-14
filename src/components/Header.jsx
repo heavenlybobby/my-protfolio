@@ -34,22 +34,34 @@ export default function Header() {
                 experiences.
               </h1>
               <div className="mt-[70px] flex gap-5">
-                <button className="bg-transparent border-2 border-[white] text-[white] text-[16px] font-bold tracking-[2.5px] h-[54px] w-[150px] pl-[1px] pr-[1px] rounded-[5px] mt-[10px] md:w-[180px] lg:w-[215px]">
+                <motion.button
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#fff",
+                    color: "#000",
+                  }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-transparent border-2 border-[white] text-[white] text-[16px] font-bold tracking-[2.5px] h-[54px] w-[150px] pl-[1px] pr-[1px] rounded-[5px] mt-[10px] md:w-[180px] lg:w-[215px]"
+                >
                   Start a Project
-                </button>
-                <button className="bg-transparent border-2 border-[white] text-[white] text-[16px] font-bold tracking-[2.5px] h-[54px] w-[150px] pl-[1px] pr-[1px] rounded-[5px] mt-[10px] md:w-[180px] lg:w-[215px]">
+                </motion.button>
+                <motion.button
+                  initial={{
+                    backgroundColor: "transparent",
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "#fff",
+                    color: "#000",
+                  }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-transparent border-2 border-[white] text-[white] text-[16px] font-bold tracking-[2.5px] h-[54px] w-[150px] pl-[1px] pr-[1px] rounded-[5px] mt-[10px] md:w-[180px] lg:w-[215px]"
+                >
                   More about me
-                </button>
+                </motion.button>
               </div>
             </motion.div>
             <div className="text-[white] hidden lg:flex flex-col gap-5 mr-[50px] mt-[100px]">
-              <a
-                href="https://www.facebook.com/profile.php?id=61572935739224"
-                target="_blank"
-                className="border-2 border-[white] w-[30px] h-[30px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-[black] transition-all duration-300 ease-in-out"
-              >
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
               <a
                 href="https://x.com/heavenly_b49271"
                 target="_blank"
